@@ -8,7 +8,7 @@ const mongoose = require('mongoose')
 const app = new express()
 
 // ----- Connect do DB
-mongoose.connect('mongodb://localhost/node-js-blog', {useNewUrlParser: true })
+mongoose.connect('mongodb://localhost/nodejsapp', {useNewUrlParser: true })
 
 
 
@@ -32,6 +32,9 @@ app.get('/contact', (request, response) => {
 })
 app.get('/post', (request, response) => {
 	response.render('post')
+})
+app.get('/posts/new', (request, response) => {
+	response.render('create')
 })
 
 app.listen(4000, () => {
