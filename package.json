@@ -1,0 +1,27 @@
+{
+  "name": "nodejsapp",
+  "version": "1.0.0",
+  "description": "Making a nodejs app working with MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start-dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anaconstantinescu/nodejsapp.git"
+  },
+  "author": "Ana Dragan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anaconstantinescu/nodejsapp/issues"
+  },
+  "homepage": "https://github.com/anaconstantinescu/nodejsapp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
