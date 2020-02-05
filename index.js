@@ -2,9 +2,14 @@
 const express = require('express')
 const path = require('path')
 const expressEdge = require('express-edge')
+const mongoose = require('mongoose')
 
 // ----- Declarations 
 const app = new express()
+
+// ----- Connect do DB
+mongoose.connect('mongodb://localhost/node-js-blog', {useNewUrlParser: true })
+
 
 
 // ----- Use
